@@ -1,0 +1,21 @@
+[project]
+name = "mlops-nginx-exam-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dju Tech ML", email = "jleroux.services@pm.me" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.142.2",
+    "numpy>=2.5.3",
+    "pydantic>=2.13.5",
+]
+
+[project.scripts]
+mlops-nginx-exam-2 = "mlops_nginx_exam_2:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
